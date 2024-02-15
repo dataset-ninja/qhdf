@@ -14,7 +14,7 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "QHDF"
-PROJECT_NAME_FULL: str = "QUT-HIA-DAF Field Data"
+PROJECT_NAME_FULL: str = "QHDF: QUT-HIA-DAF Field Dataset"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
