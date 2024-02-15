@@ -13,37 +13,46 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "QHDF"
+PROJECT_NAME_FULL: str = "QUT-HIA-DAF Field Data"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-APPLICATIONS: List[Union[Industry, Domain, Research]] = None
-CATEGORY: Category = None
+LICENSE: License = License.CC_BY_4_0()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [
+    Industry.Agricultural(),
+    Industry.Robotics(),
+]
+CATEGORY: Category = Category.Agriculture(extra=Category.Robotics())
 
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
+ANNOTATION_TYPES: List[AnnotationType] = [
+    AnnotationType.ObjectDetection(),
+]
 
-RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2020-09-20"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = None
+HOMEPAGE_URL: str = (
+    "https://data.researchdatafinder.qut.edu.au/dataset/qut-hia-daf-capsicum-datasets/resource/1fdca442-dca0-4fd0-8412-4231297336a9"
+)
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 14036210
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/qutf"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = (
+    "https://data.researchdatafinder.qut.edu.au/dataset/fc42f962-29c8-4be4-8d29-f61ebe165264/resource/1fdca442-dca0-4fd0-8412-4231297336a9/download/qhdf2020.tar.gz"
+)
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -51,16 +60,29 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = (
+    "https://conferences.com.au/wp-content/uploads/2020/09/21_CameraReady.pdf"
+)
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub":"some_link_to_repo_if_exists"}
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
 CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
-AUTHORS_CONTACTS: Optional[List[str]] = None
+AUTHORS: Optional[List[str]] = [
+    "Michael Halstead",
+    "Simon Denman",
+    "Clinton Fookes",
+    "Chris McCool",
+]
+AUTHORS_CONTACTS: Optional[List[str]] = ["michael.halstead@uni-bonn.de", "cmccool@uni-bonn.de"]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
+    "University of Bonn, Germany",
+    " Queensland University of Technology, Australia",
+]
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
+    "https://www.uni-bonn.de/en",
+    "https://www.qut.edu.au/",
+]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
