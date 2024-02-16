@@ -27,5 +27,22 @@ The QHDF dataset was collected under direct sunlight in a field situation. It co
 
 <span style="font-size: smaller; font-style: italic;">Four example images with their respective bounding boxes from the QHDF dataset.</span>
 
+| Dataset | T   | V   | E   | Height | Width | Camera       |
+|---------|-----|-----|-----|--------|-------|--------------|
+| QHDF    | 509 | 604 | 470 | 640    | 480   | RealSense 200|
+| QHDP    | 345 |  86 | 256 | 640    | 480   | RealSense 200|
+| BUP     | 114 |  84 |  88 | 1280   | 720   | RealSense 435i|
 
+<span style="font-size: smaller; font-style: italic;">The number of images contained in each of the datasets used in this paper, where ’T’, ’V’, and ’E’ represent the training, validation, and evaluation sets respectively.</span>
+
+| Dataset   | Subset     | Green | Mixed | Red |
+|-----------|------------|-------|-------|-----|
+| QHDF      | training   | 1215  | 89    | 609 |
+|           | validation | 1389  | 94    | 716 |
+|           | evaluation | 1131  | 73    | 458 |
+| QHDP      | training   | 782   | 170   | 718 |
+|           | validation | 208   | 34    | 155 |
+|           | evaluation | 956   | 190   | 528 |
+
+<span style="font-size: smaller; font-style: italic;">Distribution of sweet pepper in each of the QHD datasets.</span>
 
