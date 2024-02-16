@@ -1,6 +1,6 @@
 Dataset **QHDF** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](Set 'HIDE_DATASET=False' to generate download link)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/i/s/00/yYox0XSDZcEvdYI6Optx29jjJVunAxrTAeY8ULQoB8U2ZIkxJSUxpHrBXNz0tEbLK89JdOxZhCy2QuJpkcGilg8Nx8gznatY9At3VJqmPjeRKam4xuscUt42OqL6.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
