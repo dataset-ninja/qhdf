@@ -1,4 +1,4 @@
-The **QHDF: QUT-HIA-DAF Field Dataset** was collected in Australia under direct sunlight in a field situation. All cultivars in the dataset consist of three classes: *green*, *mixed*, and *red*. 
+The **QHDF: QUT-HIA-DAF Field Dataset** was collected in Australia under direct sunlight in a field situation. All cultivars in the dataset consist of three classes: *green*, *mixed*, and *red*. Agricultural robotics is a rapidly evolving research field due to advances in computer vision, machine learning, robotics, and increased agricultural demand. The authors explore the issue of generalisability by considering a fruit (sweet pepper) that is grown using different cultivar (subspecies) and in different environments (field vs glasshouse).
 
 Note, similar **QHDF: QUT-HIA-DAF Field Dataset** datasets are also available on the [DatasetNinja.com](https://datasetninja.com/):
 
