@@ -44,7 +44,7 @@ HOMEPAGE_URL: str = (
 PREVIEW_IMAGE_ID: int = 14036210
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = "https://github.com/dataset-ninja/qudf"
+GITHUB_URL: str = "https://github.com/dataset-ninja/qhdf"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
